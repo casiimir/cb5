@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  color: rgb(28, 28, 28);
+  font-size: 16px;
+}
+
+a {
+  color: rgb(28, 28, 28);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navbar {
+  width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+}
+
+.navbar ul {
+  width: 100px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.title {
+  color: lightseagreen;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  font-size: 4rem;
+}
+
+.hero__title {
+  top: 40px;
+  left: 100px;
+  position: absolute;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+  margin: 0 40px;
+}
