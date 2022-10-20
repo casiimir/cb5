@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/">About us</a>
+        </li>
+        <li>
+          <a href="#contact-us">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="hero">
+        <img src="https://picsum.photos/1200/800" alt="hero image" />
+      </section>
+      <aside class="sub-nav">
+        <ul>
+          <li>🫶</li>
+          <li>❤️</li>
+          <li>😊</li>
+          <li>✨</li>
+          <li>🔥</li>
+        </ul>
+      </aside>
+      <section class="collection">
+        <h3>New Collection</h3>
+        <div>
+          <img src="https://picsum.photos/400/400?1" alt="new collection 1" />
+          <img src="https://picsum.photos/400/400?2" alt="new collection 2" />
+        </div>
+      </section>
+      <section class="best-seller">
+        <h3>Best Sellers</h3>
+        <div class="cards">
+          <div class="card">
+            <img src="https://picsum.photos/140/240?1" alt="card 1" />
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/140/240?2" alt="card 2" />
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/140/240?3" alt="card 3" />
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/140/240?4" alt="card 4" />
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/140/240?5" alt="card 5" />
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/140/240?6" alt="card 6" />
+          </div>
+        </div>
+      </section>
+      <form id="contact-us" onsubmit="thankYou()">
+        <h3>Contact us</h3>
+        <label for="nome">Il tuo nome</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Qui va il tuo nome"
+          required
+        />
+        <label for="cognome">Il tuo cognome</label>
+        <input
+          type="text"
+          name="cognome"
+          id="cognome"
+          placeholder="Qui va il tuo cognome"
+          required
+        />
+        <label for="message">Il tuo messaggio</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Qui va il tuo messaggio"
+          required
+        ></textarea>
+        <input type="submit" value="Invia" />
+      </form>
+    </main>
+
+    <script>
+      const thankYou = () => alert("Thanks! Messaggio inviato correttamente!");
+    </script>
+  </body>
+</html>
