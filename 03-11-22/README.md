@@ -10,7 +10,7 @@ Esempi di questo possono essere:
 - una pagina di presentazione di vari elementi (tipo le armi di zio Rick Sanchez)
 - un pokedex...
 
-> Per quanto riguarda il nome della cartella del giorno, chiamatela pure: `03-11-22`. La seguente esercitazione verrà valutata per oggi e anche per domani. La consegna è prevista per le 13:00 di domani (a fini del docente), invece come valutazione finale delle competenze apprese è prevista la valutazione Lunedì stesso, pertanto chi vuole può arricchire il seguente progetto anche Sabato e Domenica!
+> Per quanto riguarda il nome della cartella del giorno, chiamatela pure: `03-11-22`. La seguente esercitazione verrà valutata per oggi e anche per domani. La consegna è prevista per le 13:00 di domani (a fini del docente), invece come valutazione finale delle competenze apprese è prevista la valutazione Lunedì mattino stesso, pertanto chi vuole può arricchire il seguente progetto anche Sabato e Domenica!
 
 > Consegnare qualcosa è sempre e indiscutibilmente meglio di non presentare affatto!!
 
