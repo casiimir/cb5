@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2b2b;
+  font-family: "Montserrat", sans-serif;
+}
+
+.modal {
+  position: fixed;
+  border: 1px solid white;
+  border-radius: 24px;
+  transform: rotate(-3deg);
+  font-size: 14px;
+  transition: opacity 0.35s;
+  background: black;
+  opacity: 0;
+}
+
+.modal .border {
+  width: 360px;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2b2b2b;
+  transform: rotate(-3deg);
+
+  border-radius: 24px;
+  background-color: #fff;
+}
+
+.modal .emoji-welcome {
+  margin: 0;
+  font-size: 22px;
+  transform: rotate(6deg);
+}
+
+.modal h4 {
+  margin: 12px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transform: rotate(6deg);
+}
+
+.modal .description {
+  padding: 0 40px;
+  color: #2b2b2b;
+  text-align: center;
+  transform: rotate(6deg);
+}
+
+.modal .btns {
+  display: flex;
+  gap: 30px;
+  transform: rotate(6deg);
+}
+
+.btn-signUp {
+  border: 0;
+  padding: 8px 16px;
+  background-color: #090909;
+  font-weight: bold;
+  color: #919191;
+  border-radius: 16px;
+}
+
+.btn-next {
+  border: 0;
+  padding: 8px 16px;
+  color: #2b2b2b;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+.close-modal-btn {
+  border: 0;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  font-weight: bold;
+  top: 20px;
+  right: 20px;
+  transition: all 0.75s;
+}
+
+.close-modal-btn:hover {
+  color: #919191;
+  transform: rotate(359deg) scale(1.1);
+  cursor: pointer;
+}
+
+.open-modal-btn {
+  position: absolute;
+  top: 60px;
+  left: calc(50% - 50px);
+  width: 100px;
+}
+
+.block-modal-btn {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50px);
+  width: 100px;
+}
+
+.ball {
+  position: fixed;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background: rgb(255, 0, 0);
+  background: linear-gradient(
+    138deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(213, 0, 0, 1) 100%
+  );
+  border-radius: 100%;
+  box-shadow: 1px 2px 6px 1.5px black;
+  animation: bounce 0.5s ease-out 0s infinite alternate-reverse;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-150px);
+  }
+}
