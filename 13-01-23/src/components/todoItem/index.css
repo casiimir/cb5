@@ -1,0 +1,7 @@
+.TodoItem {
+  padding: 12px 4px;
+  border-radius: 8px;
+  background-color: rgb(244, 244, 244);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+}
