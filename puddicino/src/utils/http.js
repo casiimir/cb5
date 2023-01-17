@@ -17,13 +17,24 @@
  * @since  16-01-23
  */
 
-const BASE_URL = "";
+const BASE_URL = "https://dummyjson.com";
 
 const GET = async (resource) => {
-  const res = await fetch(`${BASE_URL}/${resource}`);
-  const data = await res.json();
+  try {
+    const res = await fetch(`${BASE_URL}/${resource}`);
 
-  return data;
+    if (res.status >= 400) {
+      throw new Error("Abbiamo un problema di connessione");
+    }
+
+    const data = await res.json();
+
+    return data;
+  } catch (err) {
+    return { status: false };
+  } finally {
+    // console.log("FINALLY SEMPRE E COMUNQUE");
+  }
 };
 
 const POST = async (resource, body) => {
@@ -37,4 +48,4 @@ const POST = async (resource, body) => {
   return data;
 };
 
-export { GET };
+export { GET, POST };
