@@ -2,7 +2,17 @@ import { useState, useEffect } from "react";
 import { GET } from "../../utils/http";
 import "./index.css";
 
-const Message = ({ data }) => {
+/**
+ * Message component shows a message card
+ * @props
+ *    - data: Object - { title, body }
+ *    - textContent: String - 'full' | 'partial'
+ * return (
+ *   Card rendering
+ * )
+ */
+
+const Message = ({ data, textContent }) => {
   const [user, setUser] = useState({});
 
   useEffect(() => {
@@ -15,7 +25,7 @@ const Message = ({ data }) => {
       <div className="Message__textContent">
         <p>@{user.firstName}</p>
         <h4>{data.title}</h4>
-        <p>{data.body}</p>
+        {textContent === "full" && <p>{data.body}</p>}
       </div>
     </div>
   );

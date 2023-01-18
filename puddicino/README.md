@@ -1,3 +1,15 @@
+# Esercizio 18-01-23
+
+Sulla base della lezione del giorno, ai studenti viene proposto di continuare il progettino social, aggiungendo la sezione relativa ai filtri di ricerca e alla modale.
+
+## Avanzato
+
+Aggiungere una o più funzionalità al proprio progetto, indipendenti dalla lezione.
+
+<br>
+<hr>
+<br>
+
 # Esercizio 17-01-23
 
 Sulla base della lezione del giorno, ai studenti viene proposto di continuare il progettino social, aggiungendo la sezione relativa alla lista degli amici o simile. La personalizzazione è un elemento importante e distintivo di ogni progetto, da non sottovalutare.

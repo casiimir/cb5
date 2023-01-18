@@ -3,7 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
+
 .mainSection {
   display: flex;
   flex-direction: column;
@@ -25,11 +27,18 @@
   .friendsSection {
     padding: 24px;
     background-color: rgb(242, 242, 242);
+    width: 25%;
     height: 100vh;
     overflow-y: scroll;
   }
 
   .mainSection {
     width: 100%;
+  }
+
+  .popularSection {
+    padding: 24px;
+    background-color: rgb(242, 242, 242);
+    width: 25%;
   }
 }
