@@ -1,0 +1,4 @@
+.FriendContent {
+  display: flex;
+  flex-direction: column;
+}
