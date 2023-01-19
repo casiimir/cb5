@@ -7,6 +7,7 @@ const Filter = ({ setFilterState }) => {
   const onHandleInput = (e) => {
     e.preventDefault();
     setInputFilter(e.target.value);
+    // setFilterState(inputFilter);  // Filter on input type
   };
 
   const onHandleSubmit = (e) => {

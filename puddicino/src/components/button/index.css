@@ -12,6 +12,7 @@
   font-family: monospace;
   color: lightseagreen;
   cursor: pointer;
+  transition: all 0.35s;
 }
 
 .Button:hover {

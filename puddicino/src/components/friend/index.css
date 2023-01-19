@@ -1,6 +1,22 @@
 .Friend {
   display: flex;
   gap: 20px;
+  padding: 6px 12px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.35);
+  background-color: white;
+  cursor: pointer;
+}
+
+.Friend:hover {
+  background-color: rgb(211, 253, 211);
+}
+
+.Friend:active {
+  background-color: rgb(149, 222, 149);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.55);
 }
 
 .Friend img {
@@ -16,9 +32,15 @@
 }
 
 @media (min-width: 800px) {
-  .Friend img {
-    width: 100px;
+  .Friend {
+    width: 200px;
     height: 100px;
+    border-radius: 6px;
+  }
+
+  .Friend img {
+    width: 50px;
+    height: 50px;
   }
 
   .Friend__text {

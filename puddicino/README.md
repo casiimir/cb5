@@ -1,3 +1,11 @@
+# Esercizio 19-01-23
+
+Sulla base della lezione del giorno, ai studenti viene proposto di continuare il progettino social, testando e aggiungendo animazioni per la modale
+
+## Avanzato
+
+Aggiungere una funzionalità simile a quanto fatto per la lista degli amici, al cui click si apre una modale che mostra maggiori informazioni.
+
 # Esercizio 18-01-23
 
 Sulla base della lezione del giorno, ai studenti viene proposto di continuare il progettino social, aggiungendo la sezione relativa ai filtri di ricerca e alla modale.

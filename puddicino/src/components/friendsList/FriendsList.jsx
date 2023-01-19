@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { GET } from "../../utils/http";
 import Friend from "../friend";
+import Filter from "../filter";
 import "./index.css";
 
-const FriendsList = () => {
+const FriendsList = ({ setModalContent, setModalEnabled }) => {
+  const [filterState, setFilterState] = useState("");
   const [friendsList, setFriendsList] = useState([]);
 
   useEffect(() => {
@@ -13,9 +15,20 @@ const FriendsList = () => {
 
   return (
     <div className="FriendsList">
-      {friendsList.map((friend) => (
+      <Filter setFilterState={setFilterState} />
+      {/* {friendsList.map((friend) => (
         <Friend data={friend} key={friend.id} />
-      ))}
+      ))} */}
+      {friendsList
+        .filter((friend) => friend.firstName.includes(filterState))
+        .map((friend) => (
+          <Friend
+            data={friend}
+            setModalContent={setModalContent}
+            setModalEnabled={setModalEnabled}
+            key={friend.id}
+          />
+        ))}
     </div>
   );
 };

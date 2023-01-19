@@ -3,7 +3,7 @@ import { POST } from "../../utils/http";
 
 import "./index.css";
 
-const NewMessage = () => {
+const NewMessage = ({ setModalEnabled }) => {
   const [messageText, setMessageText] = useState("");
   const [authorText, setAuthorText] = useState("");
   const [titleText, setTitleText] = useState("");
@@ -25,6 +25,7 @@ const NewMessage = () => {
       title: titleText,
       body: messageText,
     });
+    setModalEnabled(false);
   };
 
   useEffect(() => {
