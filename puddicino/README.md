@@ -1,3 +1,11 @@
+# Esercizio 20-01-23
+
+Sulla base della lezione del giorno, ai studenti viene proposto di continuare il progettino social, implementando un componente `layout`che inglobi una o più sezioni desiderate dallo studente stesso.
+
+## Avanzato
+
+Aggiungere una sezione legata al login, come visto durante la lezione odierna, optando a piacere sulla UI/UX, ma utilizzanod il `localStorage` o il `sessionStorage` come memoria temporanea sul quale scrivere in modo persistente i dati relativi all'utente che vi ha fatto accesso.
+
 # Esercizio 19-01-23
 
 Sulla base della lezione del giorno, ai studenti viene proposto di continuare il progettino social, testando e aggiungendo animazioni per la modale

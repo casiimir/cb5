@@ -1,14 +1,25 @@
 .FriendsList {
-  padding: 10px 20px;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
   overflow-x: scroll;
-  width: 100vw;
+}
+
+.FriendsList__items {
+  display: flex;
+  padding: 10px 20px;
+  gap: 10px;
 }
 
 @media (min-width: 800px) {
   .FriendsList {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .FriendsList__items {
     flex-direction: column;
     gap: 30px;
   }

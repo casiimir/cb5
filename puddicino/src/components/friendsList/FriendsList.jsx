@@ -19,16 +19,18 @@ const FriendsList = ({ setModalContent, setModalEnabled }) => {
       {/* {friendsList.map((friend) => (
         <Friend data={friend} key={friend.id} />
       ))} */}
-      {friendsList
-        .filter((friend) => friend.firstName.includes(filterState))
-        .map((friend) => (
-          <Friend
-            data={friend}
-            setModalContent={setModalContent}
-            setModalEnabled={setModalEnabled}
-            key={friend.id}
-          />
-        ))}
+      <div className="FriendsList__items">
+        {friendsList
+          .filter((friend) => friend.firstName.includes(filterState))
+          .map((friend) => (
+            <Friend
+              data={friend}
+              setModalContent={setModalContent}
+              setModalEnabled={setModalEnabled}
+              key={friend.id}
+            />
+          ))}
+      </div>
     </div>
   );
 };
