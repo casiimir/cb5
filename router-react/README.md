@@ -12,6 +12,8 @@ Sulla base della lezione del giorno, creare un nuovo progetto chiamato `react-ro
 
 UI e UX sono a scelta dello studente, la consegna si intende soddisfatta al raggiungimento dei tre punti, stile e interfaccia non interferiscono in questo esercizio.
 
+> Utilizzare pure `https://dummyjson.com/users` per ottenere i dati utili.
+
 ### Avanzato
 
 Aggiungere funzionalità o aspetti originali a proprio piacimento, verranno valutati come sempre!
