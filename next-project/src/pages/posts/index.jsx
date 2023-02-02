@@ -15,6 +15,7 @@ export default function Posts({ users, posts }) {
 }
 
 export async function getStaticProps() {
+  console.log(process.env.NEXT_PUBLIC_FIRST_ENV_VAR);
   const resUsers = await fetch("https://dummyjson.com/users");
   // const resPosts = await fetch("https://dummyjson.com/posts");
   const dataUsers = await resUsers.json();
