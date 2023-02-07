@@ -10,7 +10,7 @@ function App() {
   const [state, dispatch] = useReducer(titleReducer, initialState);
 
   return (
-    <Context.Provider value={state}>
+    <Context.Provider value={{ state, dispatch }}>
       <div className={styles.App}>
         <FancyTitle />
         <Dashboard />

@@ -1,13 +1,28 @@
 function titleReducer(state, action) {
   switch (action.type) {
-    case "change_title":
+    case "LOG_IN":
       return {
+        ...state,
         fancyTitle: {
-          title: "Un altro titolo",
+          title: action.payload,
+        },
+        user: {
+          ...state.user,
+          name: "Pippo",
+          email: "pippo@email.com",
+        },
+      };
+
+    case "CHANGE_USER_NAME":
+      return {
+        ...state,
+        user: {
+          ...state.user,
+          name: action.payload,
         },
       };
     default:
-      throw new Error();
+      state;
   }
 }
 
