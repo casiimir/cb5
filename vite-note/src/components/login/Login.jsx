@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { ApplicationCtx } from "../../App";
+import { ApplicationCtx } from "../../store";
 import styles from "./index.module.scss";
 
 const Login = () => {
@@ -9,7 +9,6 @@ const Login = () => {
   const onHandleSubmit = (e) => {
     e.preventDefault();
     dispatch({ type: "SET_USERNAME", payload: username });
-    localStorage.setItem("Note-app-username", username);
   };
 
   return (

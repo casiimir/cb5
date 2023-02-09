@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ApplicationCtx } from "../../App";
+import { ApplicationCtx } from "../../store";
 import NoteItem from "../noteItem";
 import styles from "./index.module.scss";
 

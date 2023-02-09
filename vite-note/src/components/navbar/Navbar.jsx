@@ -1,17 +1,19 @@
 import { useContext } from "react";
-import { ApplicationCtx } from "../../App";
+import { ApplicationCtx } from "../../store";
 import styles from "./index.module.scss";
 
 const Navbar = () => {
-  const { state } = useContext(ApplicationCtx);
+  const { state, dispatch } = useContext(ApplicationCtx);
 
   const onLogout = () => {
     localStorage.removeItem("Note-app-username");
+    dispatch({ type: "REMOVE_USERNAME" });
   };
 
   return (
     <div className={styles.Navbar}>
-      <h2 onClick={() => onLogout()}>{state.user.username}</h2>
+      <h2>{state.user.username}</h2>
+      <button onClick={() => onLogout()}>Logout</button>
     </div>
   );
 };
