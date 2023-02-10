@@ -34,6 +34,8 @@ const initialState = {
   user: {
     username: localStorage.getItem("Note-app-username"),
   },
+  currentEditNote: null,
+  isModalOpen: false,
 };
 
 const ApplicationCtx = createContext(initialState);

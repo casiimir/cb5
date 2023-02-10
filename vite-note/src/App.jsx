@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import AddNote from "./components/addNote";
 import NoteContent from "./components/noteContent";
 import Login from "./components/login";
+import Modal from "./components/modal";
 
 import { ApplicationCtx } from "./store";
 import { useReducer } from "react";
@@ -20,10 +21,14 @@ function App() {
         ) : (
           <>
             <Navbar />
-            <main>
-              <AddNote />
-              <NoteContent />
-            </main>
+            {state.isModalOpen ? (
+              <Modal />
+            ) : (
+              <main>
+                <AddNote />
+                <NoteContent />
+              </main>
+            )}
           </>
         )}
       </ApplicationCtx.Provider>

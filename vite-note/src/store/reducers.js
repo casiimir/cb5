@@ -47,6 +47,29 @@ const globalReducer = (state, action) => {
         ...state,
         noteList: state.noteList.filter((item) => item.id !== action.payload),
       };
+    case actions.ON_SET_CURRENT_EDIT_NOTE:
+      return {
+        ...state,
+        currentEditNote: parseInt(action.payload),
+      };
+    case actions.ON_EDIT_NOTE:
+      return {
+        ...state,
+        // noteList: state.noteList.map((note) =>
+        //   note.id === state.currentEditNote ? action.payload : note
+        // ),
+        noteList: state.noteList.map((note) => {
+          if (note.id === state.currentEditNote) {
+            return action.payload;
+          }
+          return note;
+        }),
+      };
+    case actions.ON_HANDLE_MODAL:
+      return {
+        ...state,
+        isModalOpen: !state.isModalOpen,
+      };
     default:
       return state;
   }
